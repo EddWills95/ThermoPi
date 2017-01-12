@@ -2,6 +2,17 @@
 
 Raspberry Pi Python, PHP and SQL thermostat
 
+## What You'll need. 
+
+- Any sort of Raspberry Pi. I used the Zero. 
+- DHT11 or 22 (Requires a small change in the code)
+- A relay. I grabbed a random one off ebay. 
+
+The way you wire this up is more or less up to you and can be changed in the main python script as I declare them early on. 
+Look up the pinouts if you need to, but you essentially need the 5v, Ground and 2 other GPIO pins to run the whole thing. 
+
+There will be a picture of the current crude setup in this repo (until I design and 3d print a case).  
+
 ## Dependancies
 
 ### Install Driver for DHT11
@@ -35,5 +46,15 @@ This webpage should get you along the right track to getting PHPMyAdmin up and r
 
 The way I have this set up like the image uploaded in this Repo. 
 
-## Config SetUp 
+## Config Setup 
 I have included an example, but essentially all you need to do here is put the password of your SQL server into it. 
+
+## Web Setup
+
+I decided to use Apache2 as my webserver. You can pretty much use whatever here so long as you can run PHP 
+
+https://www.stewright.me/2015/08/tutorial-install-apache-php-and-mysql-on-a-raspberry-pi-2/
+
+That guide will get you going. You need to make sure you've got apache working which you can do by just visiting the IP address of your pi in a browser. 
+
+From there you can pretty much just drag and drop the files in the HTML folder into the /var/www/html folder of the pi. CyberDuck is a good way to get acess to the files without setting up a samba share or anything like that. 
