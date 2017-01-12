@@ -1,17 +1,20 @@
-# Pi-Python-Thermostat
+# ThermoPi
+
 Raspberry Pi Python, PHP and SQL thermostat
 
-Dependancies
-Install Driver for DHT11
-git clone https://github.com/adafruit/Adafruit_Python_DHT.git
+## Dependancies
 
-cd Adafruit_Python_DHT
+### Install Driver for DHT11
 
-sudo apt-get install build-essential python-dev 
+  git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 
-sudo python setup.py install
+  cd Adafruit_Python_DHT
 
-SQL Server and PHPMyAdmin
+  sudo apt-get install build-essential python-dev 
+
+  sudo python setup.py install
+
+### SQL Server and PHPMyAdmin
 sudo apt-get install mysql-server phpmyadmin 
 
 nano /etc/apache2/apache2.conf
