@@ -57,7 +57,7 @@
 
 <html>
 <head>
-	<title>PiThermostat Update Page</title>
+	<title>ThermoPi</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -132,7 +132,7 @@
 				<p>This Page will Refresh in: <span id="time"></span> seconds</p>
 			</div>
 			<div>
-				<h1>Edd's Raspberry Pi Thermostat</h1>
+				<h1>ThermoPi/h1>
 			</div>
 			<div id="clockwrap" class="topblock">
 				 <table id="clock">
