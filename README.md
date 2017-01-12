@@ -18,7 +18,8 @@ Raspberry Pi Python, PHP and SQL thermostat
     sudo apt-get install mysql-server phpmyadmin 
     nano /etc/apache2/apache2.conf
 
-Add at the end: Include /etc/phpmyadmin/apache.conf
+Add at the end: 
+    Include /etc/phpmyadmin/apache.conf
 
     /etc/init.d/apache2 restart 
 (Might Need Sudo, just run sudo !!)
