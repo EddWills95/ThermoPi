@@ -58,3 +58,9 @@ https://www.stewright.me/2015/08/tutorial-install-apache-php-and-mysql-on-a-rasp
 That guide will get you going. You need to make sure you've got apache working which you can do by just visiting the IP address of your pi in a browser. 
 
 From there you can pretty much just drag and drop the files in the HTML folder into the /var/www/html folder of the pi. CyberDuck is a good way to get acess to the files without setting up a samba share or anything like that. 
+
+## You Need to Change all the PHP files to have your password in. 
+
+    use nano /var/www/html/*file*.php 
+    
+Reboot the Pi and See if it Works.     
