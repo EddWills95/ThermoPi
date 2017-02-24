@@ -67,7 +67,7 @@ Reboot the Pi and See if it Works.
 
 ##Edit: Restart on Reboot
 I was having problems with the power in my area so decided to make sure that this starts on boot
-I've attatched the launcher.sh file which will waith 30 seconds after a reboot (to make sure mysql is running) and restart the script. 
+I've attatched the launcher.sh file which will wait 30 seconds after a reboot (to make sure mysql is running) and restart the script. 
 
 you need to edit crontab with this line
 
