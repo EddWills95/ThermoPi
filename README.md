@@ -64,3 +64,17 @@ From there you can pretty much just drag and drop the files in the HTML folder i
     use nano /var/www/html/*file*.php 
     
 Reboot the Pi and See if it Works.     
+
+##Edit: Restart on Reboot
+I was having problems with the power in my area so decided to make sure that this starts on boot
+I've attatched the launcher.sh file which will waith 30 seconds after a reboot (to make sure mysql is running) and restart the script. 
+
+you need to edit crontab with this line
+
+    sudo crontab -e
+    
+at the end of that file add the line
+
+    @reboot sh /home/pi/launcher.sh > / home/pi/logs/conlog 2>&1
+    
+This should mean that in the case of a power loss when it reboots the script restarts and gets your heating working again. 
